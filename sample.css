@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    @apply w-[20vw] h-[20vw] m-8 p-8 border-4 border-gray-800 rounded-2xl shadow-[2px_8px_8px_16px_rgba(0,0,0,0.5)] hover:translate-x-2 hover:translate-y-2 hover:bg-gray-200 duration-500;
+  }
+  .heading {
+    @apply text-center text-2xl underline;
+  }
+  .button_1 {
+    @apply mt-10 px-4 py-2 bg-blue-900 text-emerald-600 border-2 rounded-xl border-emerald-800 text-2xl active:translate-x-2 active:translate-y-2 duration-20;
+  }
+}
